@@ -228,11 +228,19 @@ body {
         margin-bottom: 46px;
     }
     &__item {
-        position: relative;
         background-color: #f5f7ff;
         margin-bottom: 22px;
         border-radius: 8px;
         cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__item-title {
+        position: relative;
+        padding: 22px 24px 19px 59px;
+        font-size: 16px;
+        font-weight: 600;
         &::after {
             content: "\f107";
             font-family: "Font Awesome 5 Free";
@@ -245,8 +253,10 @@ body {
             height: 10px;
             color: $secondaryPurpleColor;
         }
-        &::before {
-            content: "1";
+        &:first-child::before,
+        &:nth-child(2)::before,
+        &:last-child::before {
+            content: "";
             position: absolute;
             display: flex;
             align-items: center;
@@ -256,29 +266,32 @@ body {
             width: 30px;
             border-radius: 6px;
             font-weight: 600;
-            background-color: #f3e0ff;
-            color: #9444c9;
             left: 14px;
             top: 50%;
             transform: translateY(-50%);
         }
         &:first-child::before {
             content: "1";
-            background-color: red;
+            color: #9444c9;
+            background-color: #f3e0ff;
         }
         &:nth-child(2)::before {
             content: "2";
-            background-color: green;
+            color: #626fff;
+            background-color: #e7e9fe;
         }
         &:last-child::before {
             content: "3";
-            background-color: yellow;
+            color: #ff5c00;
+            background-color: #ffdecc;
         }
     }
-    &__item-title {
-        padding: 22px 24px 19px 59px;
-        font-size: 16px;
-        font-weight: 600;
+    &__item-descr {
+        padding-left: 59px;
+        padding-bottom: 21px;
+        font-size: 12px;
+        line-height: 22px;
+        color: $descriptionsColor;
     }
 }
 

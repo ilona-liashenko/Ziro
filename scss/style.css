@@ -281,13 +281,21 @@ body {
   margin-bottom: 46px;
 }
 .how-works__item {
-  position: relative;
   background-color: #f5f7ff;
   margin-bottom: 22px;
   border-radius: 8px;
   cursor: pointer;
 }
-.how-works__item::after {
+.how-works__item:last-child {
+  margin-bottom: 0;
+}
+.how-works__item-title {
+  position: relative;
+  padding: 22px 24px 19px 59px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.how-works__item-title::after {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -299,8 +307,8 @@ body {
   height: 10px;
   color: #4238af;
 }
-.how-works__item::before {
-  content: "1";
+.how-works__item-title:first-child::before, .how-works__item-title:nth-child(2)::before, .how-works__item-title:last-child::before {
+  content: "";
   position: absolute;
   display: flex;
   align-items: center;
@@ -310,28 +318,31 @@ body {
   width: 30px;
   border-radius: 6px;
   font-weight: 600;
-  background-color: #f3e0ff;
-  color: #9444c9;
   left: 14px;
   top: 50%;
   transform: translateY(-50%);
 }
-.how-works__item:first-child::before {
+.how-works__item-title:first-child::before {
   content: "1";
-  background-color: red;
+  color: #9444c9;
+  background-color: #f3e0ff;
 }
-.how-works__item:nth-child(2)::before {
+.how-works__item-title:nth-child(2)::before {
   content: "2";
-  background-color: green;
+  color: #626fff;
+  background-color: #e7e9fe;
 }
-.how-works__item:last-child::before {
+.how-works__item-title:last-child::before {
   content: "3";
-  background-color: yellow;
+  color: #ff5c00;
+  background-color: #ffdecc;
 }
-.how-works__item-title {
-  padding: 22px 24px 19px 59px;
-  font-size: 16px;
-  font-weight: 600;
+.how-works__item-descr {
+  padding-left: 59px;
+  padding-bottom: 21px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #a8a8a8;
 }
 
 .choose__item-container {
