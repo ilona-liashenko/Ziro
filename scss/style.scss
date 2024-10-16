@@ -363,7 +363,8 @@ body {
     }
 }
 
-.featured {
+.featured,
+.testimonials__text {
     position: relative;
     &:after {
         content: "";
@@ -399,7 +400,7 @@ body {
     }
     &__container {
         display: flex;
-        padding-left: 95px; 
+        padding-left: 95px;
     }
     &__subtitle {
         margin-bottom: 80px;
@@ -523,6 +524,88 @@ body {
             color: #ff5c00;
             font-size: 20px;
             background-color: #f9faff;
+        }
+    }
+}
+
+.testimonials {
+    &__subtitle {
+        margin-bottom: 45px;
+    }
+    &__container {
+        display: flex;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 49px;
+            height: 69px;
+            background-image: url("../images/testimonials/e-letter.svg");
+            top: 10px;
+            left: 58px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            background-image: url("../images/testimonials/dots.svg");
+            bottom: 55px;
+            left: 0;
+        }
+    }
+    &__img {
+        margin-right: 29px;
+    }
+    &__author {
+        padding-top: 35px;
+        margin-bottom: 13px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #323232;
+    }
+    &__position {
+        font-size: 14px;
+        color: #868686;
+        margin-bottom: 16px;
+    }
+    &__rating {
+        display: flex;
+        justify-content: end;
+    }
+    &__rate {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    &__star {
+        margin-right: 6px;
+        margin-bottom: 10px;
+        color: #ffb800;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__text {
+        font-size: 14px;
+        color: #383838;
+        line-height: 24px;
+        margin-bottom: 39px;
+        &:after {
+            width: 41px;
+            height: 41px;
+            background-size: 21px 18px;
+            top: 145px;
+            left: 0px;
+            transform: none;
+        }
+        &:before {
+            width: 41px;
+            height: 41px;
+            background-size: 21px 18px;
+            top: 145px;
+            left: 60px;
+            transform: none;
         }
     }
 }
