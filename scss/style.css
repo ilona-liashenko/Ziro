@@ -84,6 +84,15 @@ body {
   cursor: pointer;
 }
 
+.button {
+  background-color: #bdbbd9;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -232,6 +241,7 @@ body {
   align-items: center;
   background-color: transparent;
   border: none;
+  color: #000000;
   position: relative;
 }
 .watch-btn:hover {
@@ -400,6 +410,169 @@ body {
   position: relative;
   margin: 13px 0 22px 13px;
   z-index: 2;
+}
+
+.featured {
+  position: relative;
+}
+.featured:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #ef6010;
+  background-image: url("../images/featured/arrow-left.svg");
+  background-size: 32px 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: -70px;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 7px;
+}
+.featured:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #f9faff;
+  background-image: url("../images/featured/arrow-right.svg");
+  background-size: 32px 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 5px;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 7px;
+}
+.featured__container {
+  display: flex;
+  padding-left: 95px;
+}
+.featured__subtitle {
+  margin-bottom: 80px;
+}
+.featured__button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background-color: #544cac;
+}
+.featured__button:hover {
+  background-color: #bdbbd9;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured-card {
+  padding: 47px 75px;
+  box-shadow: -1px 1px 20px 0px rgba(128, 128, 128, 0.1019607843);
+  border-radius: 20px;
+  margin-right: 65px;
+  margin-bottom: 76px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.featured-card:hover .featured-card__button {
+  background-color: #544cac;
+}
+.featured-card:hover .featured-card__button::before {
+  z-index: 1;
+  color: #ffffff;
+  background-color: #ff5c00;
+  transition: all 0.3s ease-in-out;
+}
+.featured-card:last-child {
+  margin-right: 0;
+}
+.featured-card::before {
+  content: "";
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  background-color: #fea06b;
+  border-radius: 50%;
+  top: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.featured-card::after {
+  content: "\f141";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #332d2d;
+  width: 23px;
+  top: 35px;
+  right: 40px;
+}
+.featured-card:hover {
+  box-shadow: 0px 12px 30px 0px rgba(71, 71, 71, 0.1490196078);
+  background-color: #f9faff;
+  transform: translateY(-15px);
+}
+.featured-card__img {
+  border-radius: 50%;
+  margin-bottom: 45px;
+}
+.featured-card__title {
+  font-size: 20px;
+  color: #323232;
+  margin-bottom: 16px;
+}
+.featured-card__subtitle {
+  font-size: 14px;
+  color: #4238af;
+  margin-bottom: 44px;
+}
+.featured-card__content-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.featured-card__salary {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.featured-card__location {
+  display: inline-block;
+}
+.featured-card__span, .featured-card__link {
+  font-size: 14px;
+  color: #717171;
+}
+.featured-card__link {
+  margin-left: 15px;
+  display: inline-block;
+}
+.featured-card__button {
+  display: block;
+  align-self: end;
+  margin-top: 33px;
+  padding: 13px 23px;
+  position: relative;
+}
+.featured-card__button::before {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -95px;
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  color: #ff5c00;
+  font-size: 20px;
+  background-color: #f9faff;
 }
 
 .scores__container {

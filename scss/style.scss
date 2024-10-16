@@ -35,6 +35,14 @@ body {
 .logo {
     cursor: pointer;
 }
+.button {
+    background-color: #bdbbd9;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
 
 .header {
     display: flex;
@@ -178,6 +186,7 @@ body {
     align-items: center;
     background-color: transparent;
     border: none;
+    color: #000000;
     position: relative;
     &:hover {
         background-color: #ffffff;
@@ -354,6 +363,170 @@ body {
     }
 }
 
+.featured {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: #ef6010;
+        background-image: url("../images/featured/arrow-left.svg");
+        background-size: 32px 27px;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: -70px;
+        transform: translateX(-50%);
+        z-index: -1;
+        border-radius: 7px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: #f9faff;
+        background-image: url("../images/featured/arrow-right.svg");
+        background-size: 32px 27px;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 5px;
+        transform: translateX(-50%);
+        z-index: -1;
+        border-radius: 7px;
+    }
+    &__container {
+        display: flex;
+        padding-left: 95px; 
+    }
+    &__subtitle {
+        margin-bottom: 80px;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        padding: 15px 35px;
+        background-color: #544cac;
+        &:hover {
+            background-color: #bdbbd9;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.featured-card {
+    padding: 47px 75px;
+    box-shadow: -1px 1px 20px 0px #8080801a;
+    border-radius: 20px;
+    margin-right: 65px;
+    margin-bottom: 76px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: $transitionValue;
+    &:hover .featured-card__button {
+        background-color: $mainPurpleColor;
+    }
+    &:hover .featured-card__button::before {
+        z-index: 1;
+        color: #ffffff;
+        background-color: #ff5c00;
+        transition: all 0.3s ease-in-out;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 83px;
+        height: 83px;
+        background-color: #fea06b;
+        border-radius: 50%;
+        top: 43px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    &::after {
+        content: "\f141";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        color: #332d2d;
+        width: 23px;
+        top: 35px;
+        right: 40px;
+    }
+    &:hover {
+        box-shadow: 0px 12px 30px 0px #47474726;
+        background-color: #f9faff;
+        transform: translateY(-15px);
+    }
+    &__img {
+        border-radius: 50%;
+        margin-bottom: 45px;
+    }
+    &__title {
+        font-size: 20px;
+        color: #323232;
+        margin-bottom: 16px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        color: #4238af;
+        margin-bottom: 44px;
+    }
+    &__content-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &__salary {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    &__location {
+        display: inline-block;
+    }
+    &__span,
+    &__link {
+        font-size: 14px;
+        color: #717171;
+    }
+    &__link {
+        margin-left: 15px;
+        display: inline-block;
+    }
+    &__button {
+        display: block;
+        align-self: end;
+        margin-top: 33px;
+        padding: 13px 23px;
+        position: relative;
+        &::before {
+            content: "\f004";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -95px;
+            height: 49px;
+            width: 49px;
+            border-radius: 50%;
+            color: #ff5c00;
+            font-size: 20px;
+            background-color: #f9faff;
+        }
+    }
+}
+
 .scores {
     &__container {
         display: flex;
@@ -408,7 +581,6 @@ body {
     &:hover .pricing-item__btn {
         background-color: $mainPurpleColor;
     }
-
     &__plan {
         font-size: 20px;
         font-weight: 600;
