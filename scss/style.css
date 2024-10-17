@@ -423,64 +423,54 @@ body {
   z-index: 2;
 }
 
-.featured,
-.testimonials__text {
-  position: relative;
+.featured {
+  max-width: 1460px;
+  margin: 0 auto;
 }
-.featured:after,
-.testimonials__text:after {
-  content: "";
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  background-color: #ef6010;
-  background-image: url("../images/featured/arrow-left.svg");
-  background-size: 32px 27px;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 50%;
-  left: -70px;
-  transform: translateX(-50%);
-  z-index: -1;
-  border-radius: 7px;
-}
-.featured:before,
-.testimonials__text:before {
-  content: "";
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  background-color: #f9faff;
-  background-image: url("../images/featured/arrow-right.svg");
-  background-size: 32px 27px;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 50%;
-  left: 5px;
-  transform: translateX(-50%);
-  z-index: -1;
-  border-radius: 7px;
-}
-.featured__container,
-.testimonials__text__container {
+.featured__container {
+  padding-left: 69px;
   display: flex;
-  padding-left: 95px;
+  align-items: center;
 }
-.featured__subtitle,
-.testimonials__text__subtitle {
+.featured__card-wrap {
+  display: flex;
+}
+.featured__subtitle {
   margin-bottom: 80px;
+  width: 40%;
 }
-.featured__button,
-.testimonials__text__button {
+.featured__button {
   display: block;
   margin: 0 auto;
   padding: 15px 35px;
   background-color: #544cac;
 }
-.featured__button:hover,
-.testimonials__text__button:hover {
+.featured__button:hover {
   background-color: #bdbbd9;
   transition: all 0.3s ease-in-out;
+}
+
+.arrows {
+  display: flex;
+  margin-right: 51px;
+}
+.arrows__button {
+  border: none;
+  border-radius: 7px;
+  background-color: #ef6010;
+  padding: 14px 13px;
+  margin-right: 20px;
+}
+.arrows__button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #fea06b;
+}
+.arrows__button:last-child {
+  margin-right: 0;
+  background-color: #f9faff;
+}
+.arrows__button:last-child:hover {
+  background-color: #e7e9fe;
 }
 
 .featured-card {
@@ -623,6 +613,14 @@ body {
   bottom: 55px;
   left: 0;
 }
+.testimonials__content-wrap :last-child {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials__avatar-img {
+  border-radius: 50%;
+  height: 41px;
+}
 .testimonials__img {
   margin-right: 29px;
 }
@@ -678,6 +676,13 @@ body {
   top: 145px;
   left: 60px;
   transform: none;
+}
+.testimonials__arrows {
+  padding: 9px;
+  margin-right: 15px;
+}
+.testimonials__arrow-img {
+  width: 21px;
 }
 
 .scores__container {

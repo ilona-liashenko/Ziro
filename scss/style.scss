@@ -353,45 +353,20 @@ body {
     }
 }
 
-.featured,
-.testimonials__text {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        @include itemSizes(60px, 60px);
-        background-color: #ef6010;
-        background-image: url("../images/featured/arrow-left.svg");
-        background-size: 32px 27px;
-        background-position: center;
-        background-repeat: no-repeat;
-        top: 50%;
-        left: -70px;
-        transform: translateX(-50%);
-        z-index: -1;
-        border-radius: 7px;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        @include itemSizes(60px, 60px);
-        background-color: #f9faff;
-        background-image: url("../images/featured/arrow-right.svg");
-        background-size: 32px 27px;
-        background-position: center;
-        background-repeat: no-repeat;
-        top: 50%;
-        left: 5px;
-        transform: translateX(-50%);
-        z-index: -1;
-        border-radius: 7px;
-    }
+.featured {
+    max-width: 1460px;
+    margin: 0 auto;
     &__container {
+        padding-left: 69px;
         display: flex;
-        padding-left: 95px;
+        align-items: center;
+    }
+    &__card-wrap {
+        display: flex;
     }
     &__subtitle {
         margin-bottom: 80px;
+        width: 40%;
     }
     &__button {
         display: block;
@@ -401,6 +376,30 @@ body {
         &:hover {
             background-color: #bdbbd9;
             transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.arrows {
+    display: flex;
+    // margin-left: 69px;
+    margin-right: 51px;
+    &__button {
+        border: none;
+        border-radius: 7px;
+        background-color: #ef6010;
+        padding: 14px 13px;
+        margin-right: 20px;
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: #fea06b;
+        }
+        &:last-child {
+            margin-right: 0;
+            background-color: #f9faff;
+            &:hover {
+                background-color: #e7e9fe;
+            }
         }
     }
 }
@@ -538,6 +537,14 @@ body {
             left: 0;
         }
     }
+    &__content-wrap :last-child {
+            display: flex;
+            justify-content: space-between;
+    }
+    &__avatar-img {
+        border-radius: 50%;
+        height: 41px;
+    }
     &__img {
         margin-right: 29px;
     }
@@ -588,6 +595,13 @@ body {
             left: 60px;
             transform: none;
         }
+    }
+    &__arrows {
+        padding: 9px;
+        margin-right: 15px;
+    }
+    &__arrow-img {
+        width: 21px;
     }
 }
 
