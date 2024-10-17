@@ -1,0 +1,9 @@
+@mixin fonts($fontSize, $fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+@mixin itemSizes($itemHeight, $itemWidth) {
+    height: $itemHeight;
+    width: $itemWidth;
+}
