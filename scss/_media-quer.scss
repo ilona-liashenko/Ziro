@@ -112,7 +112,7 @@
         }
         &__item-title {
             padding-top: 17px;
-            table-layout: 17px;
+            padding-bottom: 17px;
         }
         &__img {
             width: 50%;
@@ -371,10 +371,53 @@
             padding-left: 75px;
         }
     }
+    .scores {
+        &__container {
+            padding: 40px 30px;
+        }
+        &__rate {
+            @include fonts(27px, 400);
+        }
+    }
     .footer-nav {
         &:nth-child(2),
         &:nth-child(3) {
             display: none;
-        }   
-    }  
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-title {
+        @include fonts(35px, 400);
+    }
+    .section-subtitle {
+        width: 90%;
+    }
+    .brands {
+        &__img {
+            height: 55px;
+        }
+    }
+    .choose {
+        &__item-container {
+            flex-direction: column;
+        }
+    }
+    .choose-item {
+        margin-right: 0;
+        width: 60%;
+        align-self: center;
+    }
+    .testimonials {
+        &__img {
+            display: none;
+        }
+        &__container {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
 }
