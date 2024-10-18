@@ -1053,9 +1053,10 @@ body {
     right: 0;
     transition: 0.4s;
     top: 105px;
-    background-color: #000000;
+    background-color: #f5f7ff;
     display: block;
     height: 100vh;
+    z-index: 4;
   }
   .menu__list {
     width: 100%;
@@ -1077,12 +1078,12 @@ body {
   .burger-checkbox:checked ~ .burger .burger__icon:before {
     top: 50%;
     transform: rotateZ(45deg);
-    background-color: red;
+    background-color: #ff5c00;
   }
   .burger-checkbox:checked ~ .burger .burger__icon:after {
     top: 50%;
     transform: rotateZ(-45deg);
-    background-color: green;
+    background-color: #ff5c00;
   }
 }
 @media screen and (max-width: 992px) {
