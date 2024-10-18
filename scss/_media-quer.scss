@@ -399,8 +399,11 @@
         width: 90%;
     }
     .banner {
+        &__container {
+            flex-direction: column;
+        }
         &__image {
-            width: 40%;
+            width: 51%;
         }
     }
     .brands {

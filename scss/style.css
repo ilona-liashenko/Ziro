@@ -1242,8 +1242,11 @@ body {
   .section-subtitle {
     width: 90%;
   }
+  .banner__container {
+    flex-direction: column;
+  }
   .banner__image {
-    width: 40%;
+    width: 51%;
   }
   .brands__img {
     height: 35px;
