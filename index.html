@@ -10,6 +10,10 @@
     <header class="header">
       <div class="header__container content-center">
         <img class="header__logo logo" src="./images/logo.svg" alt="Ziro Company Logo" />
+        <input class="burger-checkbox" id="burger" type="checkbox" />
+        <label class="burger" for="burger">
+          <span class="burger__icon"></span>
+        </label>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item"><a href="#" class="menu__link">Home</a></li>
@@ -24,7 +28,9 @@
           <input type="text" id="search" name="search" class="form__input" placeholder="Search here...." />
           <i class="fa-solid fa-magnifying-glass form__input-icon"></i>
         </form>
-        <a href="#" class="header__user-link">Login</a> <span class="header__link-divider">/</span> <a href="#" class="header__user-link">Sign up</a>
+        <div class="header__user-wrap">
+          <a href="#" class="header__user-link">Login</a> <span class="header__link-divider">/</span> <a href="#" class="header__user-link">Sign up</a>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -114,12 +120,14 @@
         </h3>
         <div class="featured__container">
           <div class="featured__arrow-wrap arrows">
-            <button class="arrows__button button"><img src="./images/featured/arrow-left.svg" alt="Left Button" /></button>
-            <button class="arrows__button button"><img src="./images/featured/arrow-right.svg" alt="Right Button" /></button>
+            <button class="arrows__button button"><img class="arrows__img featured__arrow-img" src="./images/featured/arrow-left.svg" alt="Left Button" /></button>
+            <button class="arrows__button button"><img class="arrows__img featured__arrow-img" src="./images/featured/arrow-right.svg" alt="Right Button" /></button>
           </div>
           <div class="featured__card-wrap">
             <div class="featured-card">
-              <img class="featured-card__img" src="./images/featured/features-man-curly.svg" alt="Curly Happy Man in green shirt" />
+              <div class="featured-card__img-wrap">
+                <img class="featured-card__img" src="./images/featured/features-man-curly.svg" alt="Curly Happy Man in green shirt" />
+              </div>
               <h2 class="featured-card__title">Database Programmer</h2>
               <h3 class="featured-card__subtitle">Marraz Team</h3>
               <div class="featured-card__content-wrap">
@@ -134,7 +142,9 @@
               </div>
             </div>
             <div class="featured-card">
-              <img class="featured-card__img" src="./images/featured/features-man-glasses.svg" alt="Happy Man with glasses" />
+              <div class="featured-card__img-wrap">
+                <img class="featured-card__img" src="./images/featured/features-man-glasses.svg" alt="Happy Man with glasses" />
+              </div>
               <h2 class="featured-card__title">Database Programmer</h2>
               <h3 class="featured-card__subtitle">Marraz Team</h3>
               <div class="featured-card__content-wrap">
@@ -149,7 +159,9 @@
               </div>
             </div>
             <div class="featured-card">
-              <img class="featured-card__img" src="./images/featured/features-man-curly.svg" alt="Curly Happy Man in green shirt" />
+              <div class="featured-card__img-wrap">
+                <img class="featured-card__img" src="./images/featured/features-man-curly.svg" alt="Curly Happy Man in green shirt" />
+              </div>
               <h2 class="featured-card__title">Database Programmer</h2>
               <h3 class="featured-card__subtitle">Marraz Team</h3>
               <div class="featured-card__content-wrap">
