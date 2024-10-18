@@ -398,6 +398,11 @@
     .section-subtitle {
         width: 90%;
     }
+    .banner {
+        &__image {
+            width: 40%;
+        }
+    }
     .brands {
         &__img {
             height: 35px;
