@@ -373,10 +373,13 @@
     }
     .scores {
         &__container {
-            padding: 40px 30px;
+            padding: 30px 20px;
         }
         &__rate {
-            @include fonts(27px, 400);
+            @include fonts(24px, 400);
+        }
+        &__descr {
+            @include fonts(13px, 400);
         }
     }
     .footer-nav {
@@ -396,7 +399,8 @@
     }
     .brands {
         &__img {
-            height: 55px;
+            height: 50px;
+            margin-right: 5px;
         }
     }
     .choose {
@@ -418,6 +422,21 @@
             &::after {
                 display: none;
             }
+        }
+    }
+    .watch-btn {
+        &__icon {
+            margin-right: 15px;
+            &::after {
+                top: 3px;
+            }
+        }
+    }
+    .pricing-item {
+        width: 70%;
+        padding: 30px 20px;
+        &__list {
+            padding-left: 75px;
         }
     }
 }

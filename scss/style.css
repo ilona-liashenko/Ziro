@@ -1219,10 +1219,14 @@ body {
     padding-left: 75px;
   }
   .scores__container {
-    padding: 40px 30px;
+    padding: 30px 20px;
   }
   .scores__rate {
-    font-size: 27px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .scores__descr {
+    font-size: 13px;
     font-weight: 400;
   }
   .footer-nav:nth-child(2), .footer-nav:nth-child(3) {
@@ -1238,7 +1242,8 @@ body {
     width: 90%;
   }
   .brands__img {
-    height: 55px;
+    height: 50px;
+    margin-right: 5px;
   }
   .choose__item-container {
     flex-direction: column;
@@ -1253,5 +1258,18 @@ body {
   }
   .testimonials__container::before, .testimonials__container::after {
     display: none;
+  }
+  .watch-btn__icon {
+    margin-right: 15px;
+  }
+  .watch-btn__icon::after {
+    top: 3px;
+  }
+  .pricing-item {
+    width: 70%;
+    padding: 30px 20px;
+  }
+  .pricing-item__list {
+    padding-left: 75px;
   }
 }/*# sourceMappingURL=style.css.map */
