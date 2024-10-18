@@ -374,13 +374,13 @@
     }
     .scores {
         &__container {
-            padding: 30px 20px;
+            padding: 30px 9px;
         }
         &__rate {
-            @include fonts(24px, 400);
+            @include fonts(21px, 400);
         }
         &__descr {
-            @include fonts(13px, 400);
+            @include fonts(11px, 400);
         }
     }
     .footer-nav {
@@ -400,7 +400,7 @@
     }
     .brands {
         &__img {
-            height: 50px;
+            height: 44px;
             margin-right: 5px;
         }
     }

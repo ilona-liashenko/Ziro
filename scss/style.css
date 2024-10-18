@@ -1220,14 +1220,14 @@ body {
     padding-left: 75px;
   }
   .scores__container {
-    padding: 30px 20px;
+    padding: 30px 9px;
   }
   .scores__rate {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 400;
   }
   .scores__descr {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
   }
   .footer-nav:nth-child(2), .footer-nav:nth-child(3) {
@@ -1243,7 +1243,7 @@ body {
     width: 90%;
   }
   .brands__img {
-    height: 50px;
+    height: 44px;
     margin-right: 5px;
   }
   .choose__item-container {
