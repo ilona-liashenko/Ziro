@@ -1005,9 +1005,6 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
-  .banner__image {
-    width: 50%;
-  }
   .menu {
     display: none;
   }
@@ -1239,9 +1236,6 @@ body {
   .banner__container {
     flex-direction: column;
   }
-  .banner__image {
-    width: 51%;
-  }
   .brands__img {
     height: 35px;
     margin-right: 5px;
@@ -1273,6 +1267,4 @@ body {
   .pricing-item__list {
     padding-left: 75px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

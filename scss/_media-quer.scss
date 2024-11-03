@@ -137,11 +137,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .banner {
-        &__image {
-            width: 50%;
-        }
-    }
+    // .banner {
+    //     &__image {
+    //         width: 50%;
+    //     }
+    // }
     .menu {
         display: none;
     }
@@ -402,9 +402,9 @@
         &__container {
             flex-direction: column;
         }
-        &__image {
-            width: 51%;
-        }
+        // &__image {
+        //     width: 51%;
+        // }
     }
     .brands {
         &__img {

@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./сss/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Ziro</title>
   </head>
   <body>
-    
     <header class="header">
       <div class="header__container content-center">
         <img class="header__logo logo" src="./images/logo.svg" alt="Ziro Company Logo" />
@@ -49,7 +48,17 @@
               <button class="banner__button button watch-btn"><i class="fa-regular fa-circle-play watch-btn__icon"></i> Watch Demo</button>
             </div>
           </div>
-          <img src="./images/banner-girl.png" alt="Happy girl with a laptop" class="banner__image" />
+          <img
+            src="./images/banner-girl.png"
+            srcset="./images/banner-girl-250.png 250w, 
+                    ./images/banner-girl-350.png 350w, 
+                    ./images/banner-girl.png 568w"
+            sizes="(max-width: 768px) 250px,
+                  (max-width: 992px) 350px,
+                  568px"
+            alt="Happy girl with a laptop"
+            class="banner__image"
+          />
         </div>
       </section>
 
@@ -70,14 +79,14 @@
             <div class="how-works__item how-works__item--top">
               <h2 class="how-works__item-title">Complete Profile</h2>
             </div>
-            <div class="how-works__item  how-works__item--middle">
+            <div class="how-works__item how-works__item--middle">
               <h2 class="how-works__item-title">Search Vacancies</h2>
               <p class="how-works__item-descr">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation.
               </p>
             </div>
-            <div class="how-works__item  how-works__item--bottom">
+            <div class="how-works__item how-works__item--bottom">
               <h2 class="how-works__item-title">Apply Job</h2>
             </div>
           </div>
@@ -122,8 +131,12 @@
         </h3>
         <div class="featured__container">
           <div class="featured__arrow-wrap arrows">
-            <button class="arrows__button button"><img class="arrows__img featured__arrow-img" src="./images/featured/arrow-left.svg" alt="Left Button" /></button>
-            <button class="arrows__button button"><img class="arrows__img featured__arrow-img" src="./images/featured/arrow-right.svg" alt="Right Button" /></button>
+            <button class="arrows__button button">
+              <img class="arrows__img featured__arrow-img" src="./images/featured/arrow-left.svg" alt="Left Button" />
+            </button>
+            <button class="arrows__button button">
+              <img class="arrows__img featured__arrow-img" src="./images/featured/arrow-right.svg" alt="Right Button" />
+            </button>
           </div>
           <div class="featured__card-wrap">
             <div class="featured-card">
@@ -215,9 +228,9 @@
                 </button>
               </div>
               <div class="testimonials__avatars">
-                <img src="./images/testimonials/avatar-girl.svg" alt="Girl with a book" class="testimonials__avatar-img">
-                <img src="./images/featured/features-man-curly.svg" alt="Girl with a book" class="testimonials__avatar-img">
-                <img src="./images/testimonials/avatar-man.svg" alt="Girl with a book" class="testimonials__avatar-img">
+                <img src="./images/testimonials/avatar-girl.svg" alt="Girl with a book" class="testimonials__avatar-img" />
+                <img src="./images/featured/features-man-curly.svg" alt="Girl with a book" class="testimonials__avatar-img" />
+                <img src="./images/testimonials/avatar-man.svg" alt="Girl with a book" class="testimonials__avatar-img" />
               </div>
             </div>
           </div>
